@@ -1,9 +1,14 @@
 <h1>My tasks </h1>
 
-<ol>
+<ul>
 <% @tasks.each do |task| %>
   <li>
     <%= link_to task.title, task_path(task) %>
   </li>
 <% end %>
-</ol>
+</ul>
+
+<%= link_to "Add a new task", new_task_path %>
+
+
+<!-- app/views/restaurants/index.html.erb -->
